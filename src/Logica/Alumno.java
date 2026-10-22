@@ -14,7 +14,32 @@ public class Alumno {
         this.apellido = apellido;
     }
 
-    public void mostrarNombre() {
-        System.out.println("Mi nombre es: "+nombre);
+    //Usaremos los getters y setters
+    //Getter : Obtener - Traer
+    //Setter: Mostrar - Colocar
+
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
     }
 }
