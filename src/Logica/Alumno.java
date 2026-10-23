@@ -1,45 +1,41 @@
 package Logica;
 
-public class Alumno {
-    int edad;
-    String nombre;
-    String apellido;
+public class Alumno extends Persona{
+    String grado;
+    String colegio;
+    String materia;
 
     public Alumno() {
     }
 
-    public Alumno(int edad, String nombre, String apellido) {
-        this.edad = edad;
-        this.nombre = nombre;
-        this.apellido = apellido;
+    public Alumno(String grado, String colegio, String materia, int id, String nombre, String Apellido, int edad, String sexo) {
+        super(id, nombre, Apellido, edad, sexo);
+        this.grado = grado;
+        this.colegio = colegio;
+        this.materia = materia;
     }
 
-    //Usaremos los getters y setters
-    //Getter : Obtener - Traer
-    //Setter: Mostrar - Colocar
-
-
-    public int getEdad() {
-        return edad;
+    public String getGrado() {
+        return grado;
     }
 
-    public void setEdad(int edad) {
-        this.edad = edad;
+    public void setGrado(String grado) {
+        this.grado = grado;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getColegio() {
+        return colegio;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setColegio(String colegio) {
+        this.colegio = colegio;
     }
 
-    public String getApellido() {
-        return apellido;
+    public String getMateria() {
+        return materia;
     }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
+    public void setMateria(String materia) {
+        this.materia = materia;
     }
 }
