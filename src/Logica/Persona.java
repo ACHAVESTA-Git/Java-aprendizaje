@@ -18,6 +18,10 @@ public class Persona {
         this.sexo = sexo;
     }
 
+    public void hablar() {
+        System.out.println("Hola");
+    }
+
     public int getId() {
         return id;
     }
